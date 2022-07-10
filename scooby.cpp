@@ -8,8 +8,8 @@ struct String {
 	        scooby[i] = c;
 	    }
 	    size = strlen (scooby);
-	    this->str = new char [size + 1];
-	    strcpy(this->str, scooby);
+	    str = new char [size + 1];
+	    strcpy(str, scooby);
         delete [] scooby;
 	}
 	~String() {
