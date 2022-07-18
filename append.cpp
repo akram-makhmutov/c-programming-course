@@ -6,8 +6,8 @@ struct String {
 	String(size_t n, char c);
 	~String();
 	void append(String &other) {
-	    size_t sex = size + other.size;
-	    char *new_str = new char [sex + 1];
+	size_t sex = size + other.size;
+	char *new_str = new char [sex + 1];
         strcpy (new_str, str);
         strcat (new_str, other.str);
         delete [] str;
